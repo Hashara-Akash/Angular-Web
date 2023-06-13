@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { MainFooterComponent } from './main-footer/main-footer.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MainFooterComponent } from './main-footer/main-footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
