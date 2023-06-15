@@ -1,0 +1,16 @@
+.box{
+  width: 250px;
+  height: 120px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0ZXJmYWxsfGVufDB8fDB8fHww&w=1000&q=80");
+}
+.b1{
+  filter: blur(2px);
+}
+.b2{
+  filter: brightness(200%);
+}
+.b3{
+  filter: grayscale(100%);
+}
