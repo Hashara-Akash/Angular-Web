@@ -1,16 +1,154 @@
-.box{
-  width: 250px;
-  height: 120px;
-  margin-bottom: 20px;
-  background-size: cover;
-  background-image: url("https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2F0ZXJmYWxsfGVufDB8fDB8fHww&w=1000&q=80");
+
+.basic-solution-inner{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  min-height: 70vh;
+  margin: 20px;
 }
-.b1{
-  filter: blur(2px);
+
+.basic-solution-outer{
+  margin: 0 30px;
 }
-.b2{
-  filter: brightness(200%);
+
+.title{
+  color:black;
+  font-weight:bold;
+  font-size:20px;
 }
-.b3{
-  filter: grayscale(100%);
+
+.title-bot{
+  font-size:20px;
+  font-weight:bold;
+  color: darkkhaki;
+}
+
+.paragraph{
+  color:black;
+  padding-top:20px;
+  font-size: 15px;
+}
+
+.paragraph-bot{
+  padding-top:20px;
+  font-size: 15px;
+}
+
+.text{
+  position: absolute;
+  bottom:25px;
+}
+.text-bot{
+  position: absolute;
+  bottom:25px;
+}
+
+
+.learn-field-top{
+  color:black;
+  text-decoration: none;
+}
+
+.learn-field{
+  color:black;
+  text-decoration: none;
+}
+
+.gaming{
+  background-color: gray;
+  height:100%;
+  width:100%;
+  padding: 25px 25px 60px  25px;
+  position:relative;
+
+}
+.gaming-video{
+  height:100%;
+  width:100%;
+}
+
+.e-commerce{
+  background-color:var(--orange-color);
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.e-commerce-video{
+  height: 100%;
+  width:100%;
+}
+
+.media{
+  background-color:#EBEDEF;
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.content{
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.financial{
+  background-color:#EBEDEF;
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.all-solution{
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.view-bot{
+  position: absolute;
+  bottom:25px;
+}
+
+.view-button{
+  color:var(--orange-color)!important;
+  border: 1px solid var(--orange-color) !important;
+  background-color:white !important;
+  text-transform: none !important;
+}
+
+.card{
+  border: 1px solid #EBEDEF;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .basic-solution-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .basic-solution-inner{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+
+  }
+  .card{
+    min-height: 30vh;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .card{
+    min-height: 30vh;
+  }
+
 }
