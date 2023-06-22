@@ -1,17 +1,150 @@
-.content{
-  display: flex;
-
-  //width: 1000px;
-
-
+.basic-solution-inner{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  min-height: 70vh;
 }
 
-.child{
+.basic-solution-outer{
+  margin: 0 30px;
+}
 
-  flex-direction: column;
-  border: 1px solid blue;
-  width: 200px;
-  height: 300px;
+.title{
+  color:white;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.title-bot{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.paragraph{
+  color:white;
+  padding-top:20px;
+  font-size: 15px;
+}
+
+.paragraph-bot{
+  padding-top:20px;
+  font-size: 15px;
+}
+
+.text{
+  position: absolute;
+  bottom:25px;
+}
+.text-bot{
+  position: absolute;
+  bottom:25px;
+}
 
 
+.learn-field-top{
+  color:white;
+  text-decoration: none;
+}
+
+.learn-field{
+  color:var(--orange-color);
+  text-decoration: none;
+}
+
+.gaming{
+  background-color: gray;
+  height:100%;
+  width:100%;
+  padding: 25px 25px 60px  25px;
+  position:relative;
+
+}
+.gaming-video{
+  height:100%;
+  width:100%;
+}
+
+.e-commerce{
+  background-color:var(--orange-color);
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.e-commerce-video{
+  height: 100%;
+  width:100%;
+}
+
+.media{
+  background-color:#EBEDEF;
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.content{
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.financial{
+  background-color:#EBEDEF;
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.all-solution{
+  height: 100%;
+  width:100%;
+  padding: 25px 20px 60px  20px;
+  position:relative;
+}
+
+.view-bot{
+  position: absolute;
+  bottom:25px;
+}
+
+.view-button{
+  color:var(--orange-color)!important;
+  border: 1px solid var(--orange-color) !important;
+  background-color:white !important;
+  text-transform: none !important;
+}
+
+.card{
+  border: 1px solid #EBEDEF;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .basic-solution-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .basic-solution-inner{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+
+  }
+  .card{
+    min-height: 30vh;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .card{
+    min-height: 30vh;
+  }
 }
